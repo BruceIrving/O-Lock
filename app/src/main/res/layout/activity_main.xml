@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009393"
+    tools:context="hotel.cyut.im.o_lock.MainActivity">
+
+    <EditText
+        android:id="@+id/m_email"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/m_email"
+        app:layout_constraintTop_toBottomOf="@+id/m_email" />
+
+    <EditText
+        android:id="@+id/m_paaword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@+id/m_email"
+        app:layout_constraintTop_toBottomOf="@+id/m_email" />
+
+    <ImageButton
+        android:id="@+id/register"
+        android:layout_width="349dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="#009393"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/m_paaword"
+        app:layout_constraintTop_toBottomOf="@+id/m_paaword"
+        app:srcCompat="@drawable/account" android:contentDescription="@string/todo"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white"
+        android:text="@string/sign_in"
+        android:textColor="#009393"
+        app:layout_constraintStart_toStartOf="@+id/register"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
+
+</android.support.constraint.ConstraintLayout>

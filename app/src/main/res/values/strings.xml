@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">O-Lock</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="todo">TODO</string>
+</resources>
