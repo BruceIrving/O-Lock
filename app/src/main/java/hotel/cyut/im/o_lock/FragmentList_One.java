@@ -3,11 +3,11 @@ package hotel.cyut.im.o_lock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Search1 extends AppCompatActivity {
+public class FragmentList_One extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search1);
+        setContentView(R.layout.fragmentlist_one);
     }
 }

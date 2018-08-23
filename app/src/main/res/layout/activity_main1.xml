@@ -2,17 +2,19 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/register"
+    android:id="@+id/regg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="hotel.cyut.im.o_lock.Main1Activity">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/back"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo2"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
@@ -23,12 +25,13 @@
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="96dp"
-        android:text="名稱"
+        android:text="@string/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/name"
         android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -37,134 +40,93 @@
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="68dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="電子郵件"
+        android:text="@string/email"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/email2"
         android:layout_width="164dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/name" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="建立密碼"
+        android:text="@string/pass"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password2"
         android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/email2" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="確認密碼"
+        android:text="@string/pass1"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/password3"
         android:layout_width="162dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="@+id/editText3" />
+        app:layout_constraintStart_toStartOf="@+id/password2" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="生日"
+        android:layout_marginTop="44dp"
+        android:text="@string/phone"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="144dp"
-        android:layout_height="26dp"
-        android:background="@drawable/shape"
-        android:gravity="center"
-        android:text="年/月/日"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/editText4" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="性別"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <RadioGroup
-        android:id="@+id/sex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="23dp"
-        android:checkedButton="@+id/radioButton"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingRight="10dp"
-            android:text="男"
-            android:textColorLink="#009393" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingRight="10dp"
-            android:text="女" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="行動電話"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
     <EditText
-        android:id="@+id/m_tel"
+        android:id="@+id/tel"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
-        app:layout_constraintStart_toStartOf="@+id/sex" />
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv8"
+        app:layout_constraintStart_toStartOf="@+id/password3"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

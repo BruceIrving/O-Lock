@@ -27,7 +27,7 @@ import prefs.UserSession;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = Main1Activity.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
     EditText etemail, etpassword;
     ImageButton butLinkToRegister;
     Button login;
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getSupportActionBar().hide();
 
-        etemail = (EditText)findViewById(R.id.m_email);
+        etemail = (EditText)findViewById(R.id.email2);
         etpassword = (EditText)findViewById(R.id.m_paaword);
-        butLinkToRegister = (ImageButton)findViewById(R.id.register);
+        butLinkToRegister = (ImageButton)findViewById(R.id.regg);
         login = (Button)findViewById(R.id.login);
         progressDialog = new ProgressDialog(this);
         session = new UserSession(this);
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 login(uName, pass);
                 break;
-            case R.id.register:
+            case R.id.regg:
                 startActivity(new Intent(this, Main1Activity.class));
                 break;
         }

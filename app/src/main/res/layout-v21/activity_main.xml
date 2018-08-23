@@ -44,6 +44,20 @@
         app:layout_constraintStart_toStartOf="@+id/email2"
         app:layout_constraintTop_toBottomOf="@+id/email2" />
 
+    <ImageButton
+        android:id="@+id/regg"
+        android:layout_width="358dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/m_paaword"
+        app:layout_constraintStart_toStartOf="@+id/m_paaword"
+        app:layout_constraintTop_toBottomOf="@+id/m_paaword"
+        app:srcCompat="@drawable/account" />
+
     <Button
         android:id="@+id/login"
         android:layout_width="69dp"
@@ -59,21 +73,6 @@
         app:layout_constraintEnd_toEndOf="@+id/regg"
         app:layout_constraintStart_toStartOf="@+id/regg"
         app:layout_constraintTop_toBottomOf="@+id/regg" />
-
-    <ImageButton
-        android:id="@+id/regg"
-        android:layout_width="347dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="@+id/m_paaword"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="@+id/m_paaword"
-        app:layout_constraintTop_toBottomOf="@+id/m_paaword"
-        app:srcCompat="@drawable/account" />
 
 
 </android.support.constraint.ConstraintLayout>
