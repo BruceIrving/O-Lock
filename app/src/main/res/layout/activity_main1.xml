@@ -5,6 +5,7 @@
     android:id="@+id/regg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009393"
     tools:context="hotel.cyut.im.o_lock.Main1Activity">
 
     <ImageButton
@@ -23,26 +24,26 @@
         android:id="@+id/textView4"
         android:layout_width="34dp"
         android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="96dp"
         android:text="@string/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="32dp"
         android:layout_marginStart="68dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        android:layout_marginRight="32dp"
-        android:layout_marginLeft="68dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
@@ -111,12 +112,12 @@
         android:id="@+id/tel"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="phone"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv8"
-        app:layout_constraintStart_toStartOf="@+id/password3"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintStart_toStartOf="@+id/password3" />
 
     <Button
         android:id="@+id/signup"

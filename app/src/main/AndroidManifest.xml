@@ -27,7 +27,9 @@
             android:name=".Main3Activity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FragmentList_One"></activity>
+        <activity android:name=".FragmentList_One" />
+        <activity android:name=".FragmentList_Two" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>
